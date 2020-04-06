@@ -8,100 +8,76 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    
+    <title>Weather Analysis</title>
+    <link rel = "stylesheet" href = "style.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" id="nav_title" href="index.html">Weather Analysis</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="comparisonspage.html">Comparison</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="table.html">Data</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
+              Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="temperature.html">Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind speed.html">Wind Speed</a>
             </div>
           </li>
         </ul>
       </div>
     </nav>
+
+
     <div class="container">
+      <div class="row">
+
+      <div class="col-lg-6 col-md-6 col-sm-6">
+          <h 3 class="title">Summary: Latitude vs. Temperature</h3>
+          <hr class="my-4">
+          <p>There seems to be an almost but not quite proportional relationship between latitude and temperature. As we move away from the equator 
+            in either direction the temperature seems to be decreasing. When the distance from the equator is greater, the temperature becomes less
+            and less. 
+          </p>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="box"></div>
+          <h3 class="title">Temperature</h3>
+          <hr class="my-4">
     
-    </div>
 
-     <!--Content section on webpage-->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-9 col-md-12">
-
-        <!--Analysis Section on webpage-->
-        <div class="box" style="padding-bottom: 5px;">
-        <h3 class="title">Maximum Temperature</h3>
-        <hr class="my-4">
-        <img src="Latitude vs. Temperature.png">
-        <p>Write analysis here</p>
-      </div>
-      </div>
-    </div>
-
-    <div class="col-lg-7 col-md-14">
-
-      <!--Vizualizations Box on right side of webpage-->
-      <div class="box">
-        <h3 class="title">Vizualizations</h3>
-        <hr class="my-4">
-        <div class="container">
-          <!--First row on webpage-->
-          <div class="row" style="padding-bottom: 40px;">
-            <div class="col-8">
-              <a href="temp.html">
-                <img src="Latitude vs. Temperature.png">
+        
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <a href="temperature.html">
+                <img id="weather_graphs" class="center" src="Latitude vs. Temperature.png">
               </a>
             </div>
           </div>
-          <!--Second Column on webpage-->
-          <div class="col-8">
-            <a href="humidity.html">
-              <img src="Latitude vs. Humidity.png">
-            </a>
-          </div>
-        </div>
-      
-    
 
-    <!--Second row on webpage-->
-    <div class="row" style="padding-bottom: 40px;">
-      <!--First column on webpage-->
-      <div class="col-8">
-        <a href="cloudiness.html">
-          <img src="Latitude vs. Cloudiness.png">
-        </a>
+         
+          
       </div>
     </div>
-    <!--Second column on webdpage-->
-    <div class="col-8">
-      <a href="wind.html">
-        <img src="Latitude vs. Wind Speed.png">
-      </a>
-    </div>
-    </div>
-    </div>
-    </div>
+  </div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
